@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+header{
+    position: relative;
+    color: white;
+    padding: 5em 0;
+}
+/* start to make the header background and its opcity */
+header::after{
+    content: "";
+    background-image: url(code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+header::before{
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* end to make the header background and its opcity */
+.container{
+    padding: 5%;
+}
+header button{
+    padding: 1em 2em;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border: 1px solid rgb(138, 138, 138);
+    font-size: 1em;
+    cursor: pointer;
+}
+header p{
+    font-size: 1.2em;
+}
+/* start introduction section */
+.introduction{
+    background-color: rgb(219, 208, 196);
+}
+.introduction h2{
+    margin: 0 auto 2em;
+}
+.introduction p{
+    font-size: 1.2em;
+    color: rgb(82, 74, 70);
+}
+/* end introduction section */
+/* start read more section */
+.read-more{
+    background-color: rgb(49, 43, 43);
+}
+.read-more .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, [col-start] minmax(400px, auto) [col-end]);
+    justify-content: center; /* how to do minmax with a max number of colomns*/
+}
+.card{
+    background-color: white;
+    margin-bottom: 1em;
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card h4{
+    font-size: 1.5em;
+}
+.card p{
+    font-size: 1.2em;
+    margin: 1.5em;
+}
+/* end read more section */
+/* start handle needs section */
+.handle-needs h4{
+    font-size: 1.5em;
+}
+.handle-needs p{
+    font-size: 1.2em;
+    margin: 1.3em;
+}
+/* end handle needs section */
+/* start contact-about section */
+.cont-about{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, [col-start] minmax(500px, auto) [col-end]);
+}
+.contact{
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding: 2em
+}
+.about{
+    background-color: rgb(58, 55, 55);
+    color: white;
+    padding: 2em
+}
+.cont-about h4{
+    font-size: 1.5em;
+}
+.cont-about p{
+    font-size: 1.2em;
+    margin: 1.3em;
+}
+/* end contact-about section */
+/* start footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 1.5em;
+}
+footer p{
+    font-size: 1.2em;
+    padding-bottom: 0;
+    line-height: 0.4em;
+}
+footer p span{
+    color: rgb(0, 102, 255);
+}
+/* start footer section */
