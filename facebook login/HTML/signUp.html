@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../Styles/signUp.css"></link>
+    <title>Facebook - log in or sign up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="../images/fb svg.svg" alt="facebook logo">
+            <h2>Facebook helps you connect and share with people in your life.</h2>
+        </div>
+        <div class="login">
+            <div class="form">
+                <input type="text" name="usrEmailNum" placeholder="Email address or phone number">
+                <input type="text" name="password" placeholder="Password">
+                <input type="submit" value="Log in" name="login">
+                <a href="#">Forgotten password?</a>
+                <hr>
+                <input type="button" value="Create New Account" name="signUp" onclick="openSignUp()">
+            </div>
+            <div class="createPage">
+                <a href="#">create a Page</a>
+                <span>for a celebrity, brand or business.</span>
+            </div>
+        </div>
+    </div>
+    <div class="signUp">
+        <div class="header">
+            <h1>Sign Up</h1>
+            <h4>It's quick and easy.</h4>
+        </div>
+        <hr>
+        <div class="formSignUp">
+            <form action="../HTML/homePage.html" method="get">
+
+                <input type="text" name="usrFname" placeholder="First name">
+                <input type="text" name="usrLname" placeholder="Surname">
+                <input type="text" name="usrEM" placeholder="Mobile number or email address">
+                <input type="text" name="usrNewPass" placeholder="New password">
+
+                <label>Date of birth</label><br>
+                <div class="dob">
+                    <select name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    <select name="month">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                        </select><select name="year">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                        </select>
+                </div>
+
+                <label>Gender</label>
+                <div class="gender">
+                    <span>
+                        <label>Male</label>
+                        <input type="radio" name="gender" value="Male">
+                    </span>
+                    <span>
+                        <label>Female</label>
+                        <input type="radio" name="gender" value="Female">
+                    </span>
+                    <span>
+                        <label>Custom</label>
+                        <input type="radio" name="gender" value="Custom">
+                    </span>
+                </div>
+                <span>By clicking Sign Up, you agree to our 
+                        <a href="#">Terms</a>, <a href="#">Data Policy</a> 
+                        and <a href="#">Cookie Policy</a>. 
+                        You may receive SMS notifications from us and
+                        can opt out at any time.</span>
+                <input type="submit" value="Sign Up" onclick="">
+            </form>
+        </div>
+    </div>
+    <script src="../Scripts/signUp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* body global style */
+
+body {
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+
+body::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    opacity: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* container style */
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+
+/* title style */
+
+.title {
+    width: 60%;
+}
+
+.title img {
+    width: 400px;
+}
+
+.title h2 {
+    margin: 0 1em 0;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+
+/* login form style */
+
+.login {
+    width: 30%;
+    margin: auto;
+}
+
+.login .form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 1px 1px 10px grey;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.login .form input[type=text] {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 0.1px solid rgb(228, 225, 225);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login .form input[type=text]:focus {
+    outline: none;
+    border: 1px solid #1877f2;
+}
+
+.login .form input[type=submit] {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.login .form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #1463ca;
+}
+
+.login .form a {
+    color: #398bf4;
+    font-size: 0.8em;
+}
+
+.login hr {
+    border-top: .2px solid rgb(235, 235, 235);
+    margin-bottom: 1.5em;
+}
+
+.login .form input[type=button] {
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.login .form input[type=button]:hover {
+    cursor: pointer;
+    background-color: #318820;
+}
+
+.login .createPage {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.login .createPage a {
+    font-weight: bold;
+}
+
+
+/* sign up form style */
+
+.signUp {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px grey;
+    text-align: center;
+}
+
+.signUp .header {
+    width: 90%;
+    margin: auto;
+}
+
+.signUp .header h1 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.signUp .header h4 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    color: grey;
+    position: relative;
+}
+
+.signUp hr {
+    border-top: 0.1px solid rgb(187, 187, 187);
+}
+
+.signUp .formSignUp {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.signUp .formSignUp input[type=text] {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 0.1px solid rgb(228, 225, 225);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f5f6f7;
+}
+
+.signUp .formSignUp input[type=text]:nth-child(1),
+.signUp .formSignUp input[type=text]:nth-child(2) {
+    width: 49%;
+}
+
+.signUp .formSignUp input[type=text]:focus {
+    outline: none;
+}
+
+.signUp .formSignUp label {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.signUp .formSignUp .dob,
+.signUp .formSignUp .gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.signUp .formSignUp .dob select,
+.signUp .formSignUp .gender span {
+    width: 30%;
+    border: 0.1px solid rgb(228, 225, 225);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.5em;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signUp .formSignUp .gender span label {
+    color: black;
+}
+
+.signUp .formSignUp span {
+    font-size: 0.7em;
+    text-align: center;
+    color: grey;
+}
+
+.signUp .formSignUp span a {
+    color: blue;
+}
+
+.signUp .formSignUp input[type=submit] {
+    width: 50%;
+    padding: 1em;
+    margin: .5em auto 1.5em;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.signUp .formSignUp input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #318820;
+}
